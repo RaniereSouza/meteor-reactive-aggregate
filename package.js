@@ -15,6 +15,6 @@ Package.onUse(function(api) {
   api.use("underscore");
   api.use("mongo");
   api.use("meteorhacks:aggregate@1.3.0");
-  api.addFiles("aggregate.js");
+  api.mainModule("aggregate.js", "server");
   api.export("ReactiveAggregate");
 });
